@@ -1,0 +1,5 @@
+C:\Users\Andrey\AndroidStudioProjects\NoteApplication\app\build\intermediates\classes\debug
+C:\Users\Andrey\AndroidStudioProjects\NoteApplication\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-b917da7fef0a2c023b775e74df584e587e9694c2.jar
+C:\Users\Andrey\AndroidStudioProjects\NoteApplication\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-6569e4465e5ff9c02d22ecea964df2f05b8726f0.jar
+C:\Users\Andrey\AndroidStudioProjects\NoteApplication\app\build\intermediates\pre-dexed\debug\classes-1213694ff57b6537df322d56cc35f0742f8d9211.jar
+C:\Users\Andrey\AndroidStudioProjects\NoteApplication\app\build\intermediates\pre-dexed\debug\classes-deecae75a11579db1563d359a200f214a9b1e9ea.jar

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\andrsdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="C:\Users\Andrey\AndroidStudioProjects\NoteApplication\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-b917da7fef0a2c023b775e74df584e587e9694c2.jar" />
+    </item>
+    <item
+        jar="C:\Users\Andrey\AndroidStudioProjects\NoteApplication\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="C:\Users\Andrey\AndroidStudioProjects\NoteApplication\app\build\intermediates\pre-dexed\debug\classes-deecae75a11579db1563d359a200f214a9b1e9ea.jar" />
+    </item>
+    <item
+        jar="C:\Users\Andrey\AndroidStudioProjects\NoteApplication\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="C:\Users\Andrey\AndroidStudioProjects\NoteApplication\app\build\intermediates\pre-dexed\debug\classes-1213694ff57b6537df322d56cc35f0742f8d9211.jar" />
+    </item>
+    <item
+        jar="C:\Users\Andrey\AndroidStudioProjects\NoteApplication\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\libs\internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="C:\Users\Andrey\AndroidStudioProjects\NoteApplication\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-6569e4465e5ff9c02d22ecea964df2f05b8726f0.jar" />
+    </item>
+
+</items>
