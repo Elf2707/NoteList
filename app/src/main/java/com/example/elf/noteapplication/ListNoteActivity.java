@@ -88,6 +88,14 @@ public class ListNoteActivity extends ActionBarActivity {
        if(resultCode == RESULT_CANCELED){
           return;
        }
+
+       //Удаление записи?
+       if(resultCode == EditNoteActivity.RESULT_DEL){
+           notes.remove(editingNoteId);
+           editingNoteId = -1;
+           populateNotes();
+       }
+
        if(resultCode == RESULT_OK) {
            Serializable extra = data.getSerializableExtra("Note");
            if (extra != null) {

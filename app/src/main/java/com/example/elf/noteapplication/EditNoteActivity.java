@@ -68,7 +68,7 @@ public class EditNoteActivity extends ActionBarActivity {
 
     @Override
     protected void onStart() {
-         super.onStart();
+        super.onStart();
         Serializable extra = getIntent().getSerializableExtra("Note");
         if( extra != null ){
             //если есть экста то значит мы пришли из другого активити
@@ -81,6 +81,10 @@ public class EditNoteActivity extends ActionBarActivity {
             dateText.setText(note.getFormatDate());
             titleEditText.setEnabled(false);
             noteEditText.setEnabled(false);
+        }else{
+            //Включаем режим добавления записи, так как без
+            //данных на это активити мы можем попасть только в режим добавления
+            isAddinNote = true;
         }
     }
 
@@ -89,6 +93,10 @@ public class EditNoteActivity extends ActionBarActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_edit_note, menu);
+        //Если в режиме добавления записи удаляем пункт меню удаление
+        if( isAddinNote ){
+            menu.removeItem( R.id.delet_note_menu);
+        }
         return true;
     }
 
@@ -103,7 +111,10 @@ public class EditNoteActivity extends ActionBarActivity {
         alertBuilder.setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-
+                //Удаляем и передаем сигнал о том, что удалили
+                Intent intent = new Intent();
+                setResult(RESULT_DEL, intent);
+                finish();
             }
             });
         alertBuilder.setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
@@ -116,7 +127,11 @@ public class EditNoteActivity extends ActionBarActivity {
         return true;
     }
 
+    //Константа сигнализирующая об удалении
+    public static final int RESULT_DEL = -500;
+
     private boolean isInEditMode = true;
+    private boolean isAddinNote = false;
     private EditText titleEditText;
     private EditText noteEditText;
     private TextView dateText;
